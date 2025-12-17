@@ -12,7 +12,7 @@ import SwiftData
 struct XpensesApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Account.self, Category.self, Currency.self, RecurrentTransaction.self, Transaction.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
